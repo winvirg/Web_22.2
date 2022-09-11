@@ -5,60 +5,95 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tzeeter</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
 </head>
 <body>
+    <style>a
+        {
+            text-decoration: none;
+        }</style>
 
-    <ul style="list-style: none">
-        <img src="../icons/tiziu.png" alt="Simbolo tzeeter">
-        <li><a class="publication"><img src="../icons/house-door.svg" alt="simbolo de casa preto e branco"> Home</a> </li>
-        <li><a class="publication"><img src="../icons/hash.svg" alt="Hashtag"> Explore</a> </li>
-        <li><a class="publication"><img src="../icons/bell.svg" alt="Simbolo de sino"> Notifications</a> </li>
-        <li><a class="publication"><img src="../icons/envelope.svg" alt="Simbolo de carta"> Messages</a> </li>
-        <li><a class="publication"><img src="../icons/person-fill.svg" alt="simbolo de usuario"> Profile</a> </li>
-        <li><a class="publication"><img src="../icons/three-dots.svg" alt="tres pontos seguidos"> More</a> </li>
-    </ul>
-    
-    <button class="tzeetbtn">Tzeet</button>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <ul style="list-style: none">
+                    <img src="../icons/tiziu.png" alt="Simbolo tzeeter">
+                    <li><a class="publication" href=""><img src="../icons/house-door.svg" alt="simbolo de casa preto e branco"> Home</a> </li>
+                    <li><a class="publication" href=""><img src="../icons/hash.svg" alt="Hashtag"> Explore</a> </li>
+                    <li><a class="publication" href=""><img src="../icons/bell.svg" alt="Simbolo de sino"> Notifications</a> </li>
+                    <li><a class="publication" href=""><img src="../icons/envelope.svg" alt="Simbolo de carta"> Messages</a> </li>
+                    <li><a class="publication" href=""><img src="../icons/person-fill.svg" alt="simbolo de usuario"> Profile</a> </li>
+                    <li><a class="publication" href=""><img src="../icons/three-dots.svg" alt="tres pontos seguidos"> More</a> </li>
+                </ul>
 
-    <img src="" alt="imagem de perfil" height="64px">
+                <button class="tzeetbtn">Tzeet</button>
+                
+            </div>
 
-    <h4 class="name">Thiago Winvirg Nobre Bezerra</h4>
+            <div class="col-sm-6">
+                <img src="../icons/usuario.png" alt="imagem de perfil" height="64px">
 
-    <h5 class="user">@winvirg</h5>
-    <p class="bio">Computer Science Student @ Federal University of Ceará</p>
+                <h4 class="name">Thiago Winvirg Nobre Bezerra</h4>
 
-    <ul style="list-style: none">
-        <li class="locDate"><img src="../icons/geo-alt.svg" alt="simbolo localização"> Quixadá</li>
-        <li class="locDate"><img src="../icons/calendar3.svg" alt="simbolo calendario"> Joined October 2022</li>
-    </ul>
+                <h5 class="user">@winvirg</h5>
+                <p class="bio">Computer Science Student @ Federal University of Ceará</p>
 
-    <ul style="list-style: none">
-        <li > <p class="number">100</p><p class="statistic">following</p></li>
-        <li > <p class="number">150</p><p class="statistic">followers</p></li>
-    </ul>
-    
+                <ul style="list-style: none">
+                    <li class="locDate"><img src="../icons/geo-alt.svg" alt="simbolo localização" id="locJoiner"> Quixadá<img src="../icons/calendar3.svg" alt="simbolo calendario" id="locJoiner"> Joined October 2022</li>
+                </ul>
 
-    <a class="navigation" href="">Tzeets</a>
-    <a class="navigation" href="">Tzeets & replies</a>
-    <a class="navigation" href="">Media</a>
-    <a class="navigation" href="">Links</a>
+                <ul style="list-style: none">
+                    <li > <a class="number">100</a><a class="statistic">following</a></li>
+                    <li > <a class="number">150</a><a class="statistic">followers</a></li>
+                </ul>
 
-    <p class="name">Luana Oliveira <div class="user">@LuanaOliv</div> <div class="date">Oct 25, 2022</div></p>
-    <p class="tzeet">Não se atrasar para o encontro</p>
-        
-    <a class="actions reply" href="">Reply</a>
-    <a class="actions retzeet" href="">Retzeet</a>
-    <a class="actions like" href="">Like</a>
-    <a class="actions reply" href="">Share</a>
+                <div class="flexnav"">
+                    <a class="navigation" href="">Tzeets</a>
+                    <a class="navigation" href="">Tzeets & replies</a>
+                    <a class="navigation" href="">Media</a>
+                    <a class="navigation" href="">Links</a>
+                </div>
 
-    <div>
-        <p class="name">Thiago Winvirg <div class="user">@winvirg</div> <div class="date">Oct 27, 2022</div></p>
-        <p class="tzeet">Os sonhos não dormem</p>
-        
-        <a class="actions reply" href="">Reply</a>
-        <a class="actions retzeet" href="">Retzeet</a>
-        <a class="actions like" href="">Like</a>
-        <a class="actions reply" href="">Share</a>
+                <div>
+                    <p class="name">Luana Oliveira <div class="user">@LuanaOliv</div><div class="date"> Oct 25, 2022</div></p>
+                    <p class="tzeet">Não se atrasar para o encontro</p>
+                     
+                    <div class="flexnav">
+                        <a class="actions reply" href=""><img src="../icons/comment.svg" alt=""></a>
+                        <a class="actions retzeet" href=""><img src="../icons/arrow-repeat.svg" alt=""></a>
+                        <a class="actions like" href=""><img src="../icons/like.svg" alt=""></a>
+                        <a class="actions reply" href=""><img src="../icons/upload.svg" alt=""></a>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="name">Thiago Winvirg <div class="user">@winvirg</div> <div class="date">Oct 27, 2022</div></p>
+                    <p class="tzeet">Os sonhos não dormem</p>
+                    
+                    <a class="actions reply" href="">Reply</a>
+                    <a class="actions retzeet" href="">Retzeet</a>
+                    <a class="actions like" href="">Like</a>
+                    <a class="actions reply" href="">Share</a>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div id="search">
+                    <input type="text" id="txtSearch" placeholder="Username"/>
+                    <img src="../icons/search.svg" id="btnSearch" alt="Buscar"/>
+                </div>
+
+
+            </div>
+        </div>
     </div>
+    
+
+    
+    
+    
+
+    
 </body>
 </html>
